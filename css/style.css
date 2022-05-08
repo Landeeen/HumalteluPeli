@@ -1,0 +1,237 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: #1C5D99;
+  font-family: 'orelega one', sans-serif;
+}
+
+#title {
+  padding-top: 2%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #222222;
+  text-shadow: 0 0 3px white;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+}
+
+img:active {
+  transform: scale(0.90);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#imgs {
+  margin-top: 3%;
+}
+
+.imgArea {
+height: 45%;
+font-size: 20px;
+text-shadow: 0 0 3px white;
+}
+
+.textArea {
+height: 55%;
+}
+
+.firstRow {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
+  gap: 5px; 
+}
+
+.secondRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
+  gap: 5px;
+}
+
+#firstImgs,
+#secondImgs {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 40px;
+}
+
+#nameArea {
+  margin-top: 5%;
+  margin-left: 4%;
+  height: 25%;
+}
+
+#playerList  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 15px;
+  text-shadow: 0 0 3px black;
+}
+
+li {
+  color: white;
+  padding: 1% 2% 2% 2%;
+  transform: rotate(20deg);
+ }
+ 
+li:nth-of-type(2n) {
+ transform: rotate(330deg);
+}
+
+#beforePlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#playerName {
+  width: 50%;
+  margin: 3% 0 3% 0;
+  padding-top: 5% ;
+  font-size: 30px;
+  border: 2px solid black;
+  background: white;
+}
+
+#addPlayer {
+  width: 50%;
+  padding: 1% 0;
+  font-size: 25px;
+  font-family: 'orelega one';
+  font-size: 20px;
+  border: 4px solid black;
+  border-radius: 10%;
+  background: #BBCDE5;
+}
+
+#addPlayer:active {
+  transform: scale(0.90);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#startGame {
+  width: 20%;
+  margin-top: 3% ;
+  padding: 2%;
+  border: 4px solid black;
+  border-radius: 75%;
+  font-family: 'orelega one';
+  background: #0E1345;
+  color: white;
+  font-size: 12px;
+}
+
+#startGame:active {
+  transform: scale(0.90);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#duringPlay {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+/* 
+#round {
+  color: white;
+  font-weight: bold;
+  margin-top: -15%;
+  text-shadow: 0 0 3px black;
+  letter-spacing: 3px;
+  font-size: 25px;
+} */
+
+#taskBox {
+  width: 90%;
+  background: #BBCDE5;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  border: 3px solid #222222;
+}
+
+@media screen and (min-width: 800px) {
+
+  #imgArea {
+    height: 20%;
+  }
+
+  img {
+    width: 125px;
+    height: 125px;
+  }
+  
+  #nameArea {
+    height: 20%;
+    margin-top: -50px;
+  }
+  #playerName {
+    padding: 0;
+  }
+  #addPlayer {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  #startGame {
+    padding: 20px;
+    width: 10%;
+    
+  }
+  #duringPlay {
+    margin-top: 100px;
+  }
+  #startGame {
+    margin: 0;
+  }
+  #imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .firstRow {
+    padding: 0;
+  }
+
+  #taskBox {
+    width: 50%;
+    font-size: 40px;
+  }
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

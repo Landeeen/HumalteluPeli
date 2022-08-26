@@ -206,3 +206,10 @@ document.getElementById("pair").onclick = pairTask;
 document.getElementById("group").onclick = groupTask;
 document.getElementById("drink").onclick = drinkTask;
 document.getElementById("random").onclick = randomTask;
+
+let el = document.getElementById("playerName");
+el.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    addPlayerToList();
+  }
+});

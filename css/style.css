@@ -3,7 +3,7 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -11,7 +11,7 @@
 /* LAYOUT
 /*******************************************/
 
-body {
+/* body {
   position: fixed;
   top: 0;
   left: 0;
@@ -61,7 +61,6 @@ height: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
   gap: 5px; 
 }
 
@@ -69,7 +68,6 @@ height: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
   gap: 5px;
 }
 
@@ -161,15 +159,6 @@ li:nth-of-type(2n) {
   align-items: center;
   gap: 20px;
 }
-/* 
-#round {
-  color: white;
-  font-weight: bold;
-  margin-top: -15%;
-  text-shadow: 0 0 3px black;
-  letter-spacing: 3px;
-  font-size: 25px;
-} */
 
 #taskBox {
   width: 90%;
@@ -228,10 +217,163 @@ li:nth-of-type(2n) {
     width: 50%;
     font-size: 40px;
   }
+} */
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "orelega one", sans-serif;
+  position: relative;
 }
 
+.imgArea {
+  display: none;
+}
+#title {
+  display: flex;
+  color: white;
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
 
+.titleBox {
+  background: white;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 2rem;
+  border: solid 0.5rem;
+  border-left: solid grey 0.5rem;
+  border-right: solid grey 0.5rem;
+}
 
+#beforePlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+button,
+input {
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+}
+
+#addPlayer,
+#startGame {
+  background-color: white;
+}
+
+#addPlayer:active,
+#startGame:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#playerList {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+li {
+  color: #5a91e8;
+  padding: 2rem;
+  transform: rotate(20deg);
+}
+
+li:nth-of-type(2n) {
+  transform: rotate(330deg);
+  color: #57d49e;
+}
+li:nth-of-type(3n) {
+  color: #f584e2;
+}
+li:nth-of-type(4n) {
+  color: #ffae4a;
+}
+
+img {
+  height: 90%;
+  width: 90%;
+}
+
+img:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#imgs {
+  margin-top: 3%;
+}
+
+.imgArea {
+  height: 45%;
+  font-size: 20px;
+  text-shadow: 0 0 3px white;
+}
+.textArea {
+  height: 55%;
+}
+
+.firstRow {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.secondRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#firstImgs,
+#secondImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#nameArea {
+  margin-top: 5%;
+  margin-left: 4%;
+  height: 25%;
+}
+
+#duringPlay {
+  background: white;
+  color: black;
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding: 2rem;
+  border: solid black 0.5rem;
+  border-left: solid grey 0.5rem;
+  border-right: solid grey 0.5rem;
+  display: none;
+  justify-content: center;
+  width: 80%;
+  margin-top: -1rem;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

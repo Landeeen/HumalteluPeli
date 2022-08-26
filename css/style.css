@@ -267,8 +267,9 @@ input {
   text-align: center;
 }
 button {
-  border: solid black 0.2rem;
+  border: solid black 0.1rem;
   color: black;
+  box-shadow: 5px 5px;
 }
 
 #addPlayer,

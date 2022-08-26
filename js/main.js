@@ -198,7 +198,7 @@ const randomTask = function () {
   }
 };
 
-document.querySelector("#addPlayer").addEventListener("click", addPlayerToList);
+// document.querySelector("#addPlayer").addEventListener("click", addPlayerToList);
 document.querySelector("#startGame").addEventListener("click", startGame);
 
 document.getElementById("single").onclick = singleTask;
